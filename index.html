@@ -1,155 +1,163 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Atendimento Santos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jane Silva</title>
 
-  <!-- Fonte mais elegante -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      background: #f4ede7; /* bege exato */
-      color: #3a3a3a;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f5efe8;
+  color: #2b2b2b;
+}
 
-    header {
-      background: #c65a1e; /* laranja escuro do modelo */
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
+header {
+  text-align: center;
+  padding: 60px 20px 30px;
+}
 
-    header h1 {
-      margin: 0;
-      font-weight: 600;
-    }
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  margin: 0;
+}
 
-    nav {
-      margin-top: 15px;
-    }
+header p {
+  margin-top: 10px;
+  color: #666;
+}
 
-    nav a {
-      margin: 0 15px;
-      color: white;
-      text-decoration: none;
-      font-weight: 400;
-    }
+nav {
+  text-align: center;
+  margin-top: 30px;
+}
 
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
 
-    h2 {
-      font-weight: 600;
-      margin-bottom: 20px;
-    }
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
 
-    .hero {
-      text-align: center;
-    }
+.hero {
+  text-align: center;
+}
 
-    .hero img {
-      width: 180px;
-      border-radius: 50%;
-      margin-top: 20px;
-    }
+.hero img {
+  width: 160px;
+  border-radius: 100px;
+  margin: 20px 0;
+}
 
-    .hero p {
-      max-width: 600px;
-      margin: 10px auto;
-    }
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
 
-    .services, .feedback {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 25px;
-    }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
 
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
 
-    .card strong {
-      display: block;
-      margin-bottom: 10px;
-    }
+footer {
+  background: #f0e7dd;
+  padding: 30px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.6;
+}
 
-    footer {
-      background: #1f1f1f;
-      color: #e0e0e0;
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 14px;
-      line-height: 1.6;
-    }
-
-    @media (max-width: 700px) {
-      .services, .feedback {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+@media (max-width: 700px) {
+  .grid { grid-template-columns: 1fr; }
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <h1>Atendimento Santos</h1>
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#servicos">Serviços</a>
-    <a href="#feedback">Feedback</a>
-    <a href="#contato">Contato</a>
-  </nav>
+  <h1>Jane Silva</h1>
+  <p>Me conheça!</p>
 </header>
 
-<section class="hero">
-  <h2>Consultoria e Orientação Financeira</h2>
-  <p>Apoio administrativo, análise de dados e orientação estratégica para empresas e profissionais.</p>
+<nav>
+  <a href="#servicos">Serviços</a>
+  <a href="#sobre">Sobre Mim</a>
+  <a href="#feedback">Feedback</a>
+  <a href="#contato">Contato</a>
+</nav>
+
+<div class="container hero">
   <img src="/jane.png" alt="Jane">
-</section>
+  <p>Olá, sou Juliana e sou consultora financeira. Tenho mais de uma década de experiência no setor, trabalhando com números e analisando dados.</p>
+</div>
 
-<section id="sobre">
-  <h2>Sobre Mim</h2>
-  <p>Me chamo Juliana Silva e sou consultora financeira. Tenho experiência com análise de dados, planejamento e estratégias para crescimento de empresas. Meu objetivo é oferecer orientação clara e prática para melhorar resultados.</p>
-</section>
+<div class="container" id="sobre">
+  <div class="section-title">Sobre Mim</div>
+  <p>Me chamo Juliana e sou apaixonada por números. Decidi começar minha própria consultoria para ajudar empresas a crescer com estratégia e organização.</p>
+</div>
 
-<section id="servicos">
-  <h2>Serviços</h2>
-  <div class="services">
-    <div class="card"><strong>Análise Financeira</strong> Avaliação completa da situação atual e oportunidades de melhoria.</div>
-    <div class="card"><strong>Consultoria Administrativa</strong> Apoio na organização e tomada de decisões.</div>
-    <div class="card"><strong>Planejamento Estratégico</strong> Definição de metas e direcionamento do crescimento.</div>
-    <div class="card"><strong>Apoio Empresarial</strong> Orientação prática para negócios de pequeno e médio porte.</div>
+<div class="container" id="servicos">
+  <div class="section-title">Meu Trabalho</div>
+  <div class="grid">
+    <div class="card">Pesquisa</div>
+    <div class="card">Relatórios</div>
+    <div class="card">Raciocínio Analítico</div>
+    <div class="card">Desenvolvimento de Negócios</div>
   </div>
-</section>
+</div>
 
-<section id="feedback">
-  <h2>Feedback</h2>
-  <div class="feedback">
-    <div class="card">“A Juliana ajudou nossa empresa a organizar processos e crescer com segurança.”</div>
-    <div class="card">“Excelente suporte e visão estratégica. Recomendo totalmente.”</div>
-    <div class="card">“Consegui clareza financeira e planejamento após a consultoria.”</div>
-    <div class="card">“Profissional extremamente dedicada e competente.”</div>
+<div class="container">
+  <div class="section-title">Minhas Habilidades</div>
+  <div class="grid">
+    <div class="card">Análise de Dados</div>
+    <div class="card">Consultoria para Investimentos</div>
+    <div class="card">Gestão de Capital</div>
+    <div class="card">Consultoria Financeira</div>
   </div>
-</section>
+</div>
 
-<section id="contato">
-  <h2>Contato</h2>
+<div class="container">
+  <div class="section-title">Serviços que Ofereço</div>
+  <p>Trabalhei com diferentes empresas ao longo dos anos, oferecendo suporte estratégico e financeiro.</p>
+</div>
+
+<div class="container" id="feedback">
+  <div class="section-title">Feedback</div>
+  <div class="grid">
+    <div class="card">"A Juliana ajudou nossa empresa a crescer."</div>
+    <div class="card">"Excelente consultoria e suporte."</div>
+    <div class="card">"Muito profissional e estratégica."</div>
+    <div class="card">"Recomendo totalmente."</div>
+  </div>
+</div>
+
+<div class="container" id="contato">
+  <div class="section-title">Contato</div>
+  <p>Ligue: (21) 98519-2294</p>
   <p>Email: contato@atendimentosantos.com.br</p>
-  <p>Telefone: (21) 98519-2294</p>
-</section>
+</div>
 
 <footer>
-  <p>Razão Social: Jane da Silva Barbosa</p>
+  <p>Razão Social: 47.593.146 JANE DA SILVA BARBOSA</p>
   <p>CNPJ: 47.593.146/0001-51</p>
   <p>Endereço: Rua São Lourenço, nº 40, Apto 202 – Rio de Janeiro/RJ</p>
   <p>Email: contato@atendimentosantos.com.br</p>
